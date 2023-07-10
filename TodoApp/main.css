@@ -1,0 +1,116 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+  background: green;
+}
+.a1 {
+  display: flex;
+  width: 600px;
+  height: 600px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+.b1 {
+  position: absolute;
+  display: flex;
+  height: 60px;
+  width: 600px;
+  border: 1px solid;
+  border-radius: 5px 5px 0px 0px;
+}
+span h1 {
+  padding-left: 10px;
+  padding-top: 10px;
+  color: blue;
+}
+.F1 {
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 15px;
+}
+.F1 input {
+  height: 40px;
+  width: 500px;
+}
+.F1 button {
+  position: absolute;
+  height: 40px;
+  width: 60px;
+  background-color: crimson;
+  color: wheat;
+}
+.TodoList {
+  display: flex;
+  flex-direction: column;
+  height: 380px;
+  width: 530px;
+  border: 1px solid;
+  margin-top: 170px;
+  margin-left: 30px;
+}
+.c1 {
+  background: transparent;
+  border-color: yellow;
+  color: antiquewhite;
+}
+.a2 {
+  display: flex;
+  height: 40px;
+  width: 400px;
+  margin-top: 10px;
+  border: 1px solid;
+  margin-left: 20px;
+  flex-direction: row;
+}
+
+.a3 {
+  display: flex;
+  flex-direction: row;
+}
+.a4 {
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  width: 300px;
+
+  justify-content: center;
+  align-items: center;
+}
+.inp2 {
+  order: -1;
+  margin-left: 10px;
+}
+.inp2::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+}
+
+.inp2:checked::before {
+  transform: scale(1);
+}
+.TodoList button {
+  display: flex;
+  height: 20px;
+  justify-self: center;
+  align-self: center;
+  margin-right: 10px;
+  background-color: transparent;
+  color: white;
+}
+.a4 p {
+  color: white;
+}
